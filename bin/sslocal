@@ -1,0 +1,12 @@
+#!/usr/bin/python
+
+import os
+import sys
+sys.path[0:0] = [
+  os.path.join(__file__, '../../'),
+  ]
+
+import shadowsocks.local
+
+if __name__ == '__main__':
+    sys.exit(shadowsocks.local.main())
